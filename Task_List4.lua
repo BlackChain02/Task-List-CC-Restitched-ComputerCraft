@@ -8,11 +8,11 @@ local buttonHeight = 15
 local buttonSpacing = 2
 local screenWidth, screenHeight = monitor.getSize()
 
--- Define button labels
-local buttonLabels = {"Start", "Stop", "Reset", "Info", "Settings", "Exit"}
+-- Define default button label
+local defaultLabel = "New"
 
--- Store original labels for reset
-local originalLabels = {unpack(buttonLabels)}
+-- Define custom labels for initial display
+local buttonLabels = {"Start", "Stop", "Reset", "Info", "Settings", "Exit"}
 
 -- Function to draw a button on the monitor
 local function drawButton(button, fillColor)
@@ -47,12 +47,12 @@ local function buttonClicked(button)
     drawButton(button, colors.green)
     -- Call a custom method or action here
     print("Button " .. button.label .. " clicked!")
-    button.label = originalLabels[button.index] .. " Clicked"
+    button.label = defaultLabel .. " Clicked"
 
     -- Check if all buttons are clicked
     local allClicked = true
     for _, btn in ipairs(buttons) do
-        if btn.label == originalLabels[btn.index] then
+        if btn.label == defaultLabel then
             allClicked = false
             break
         end
@@ -62,7 +62,7 @@ local function buttonClicked(button)
     if allClicked then
         os.sleep(1) -- Small delay before reset
         for _, btn in ipairs(buttons) do
-            btn.label = originalLabels[btn.index]
+            btn.label = defaultLabel
             drawButton(btn, colors.red)
         end
     end
