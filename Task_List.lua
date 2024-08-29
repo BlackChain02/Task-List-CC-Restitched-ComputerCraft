@@ -6,7 +6,7 @@ local buttons = {}
 local buttonWidth = 24 
 local buttonHeight = 15
 local buttonSpacing = 2
-local screenWidth, screenHeight  = monitor.getSize()
+local screenWidth, screenHeight = monitor.getSize()
 
 -- Function to draw a button on the monitor
 local function drawButton(button, fillColor)
