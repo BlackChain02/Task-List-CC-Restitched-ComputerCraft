@@ -4,7 +4,7 @@ Hey little Info to the code
 
 CC:Tweaked (CraftOS 1.8)
 Monitor Size: 4 blocks widh and 3 blocks high
-Modoack i use: Create: Astral
+Modpack i use: Create: Astral
 
 At the momentan the code does not function the way I want, but let me tell you what it does.
 
