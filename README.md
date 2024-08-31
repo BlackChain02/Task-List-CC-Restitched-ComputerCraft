@@ -3,11 +3,10 @@
 Hey little Info to the code 
 
 CC:Tweaked (CraftOS 1.8)
-Monitor Size: 4 blocks widh and 3 blocks high
+Monitor Size: 5x5 Blocks
 Modpack i use: Create: Astral
 
-At the momentan the code does not function the way I want, but let me tell you what it does.
+The Code now Works.
 
-What the code is actually supposed to do: Is to create 6 Switches(Buttons) you can lable and if all Buttons are clicked the Buttons reset to an Standard lable. 
-
-Atm the code creates 6 Swiches(Buttons) you can Label. If you click one of the Buttons the Button changes the color to lime and reset to an Standart lable. And if all Buttons are clicked the Buttons reset to the Standard lable. 
+The code is supposed to: Create 9 Task buttons Labled Taks1-9 and an Edit Lable button.
+If you Click the Edit Lable button and then one of the 9 task buttons you can go in the computer and edit the Lable of the button you clicket.
